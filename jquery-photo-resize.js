@@ -28,7 +28,7 @@
 
 		options = $.extend(defaults, options);
         
-        $(element).load(function () {
+        $(element).on('load', function () {
             changeDimensions();
         });
         // the load event is a bit tricky -- it seems to not fire if
